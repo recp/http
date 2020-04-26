@@ -21,7 +21,10 @@ http_req_parse(const char * __restrict buff, size_t len) {
   if (http_memstr(p, GET)) {
     p += _s_http_GET_LEN;
     req->method = HTTP_METHOD_GET;
+  } else if (http_memstr(p, POST)) {
+    p += _s_http_POST_LEN;
+    req->method = HTTP_METHOD_POST;
   }
-  
+
   return req;
 }
