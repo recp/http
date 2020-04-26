@@ -8,6 +8,9 @@
 
 /* Begin PBXFileReference section */
 		565521C52455E63400D9389B /* libhttp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libhttp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		565521D52455E6E400D9389B /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		565521D72455E6EE00D9389B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		565521D82455E75F00D9389B /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +27,9 @@
 		565521BC2455E63400D9389B = {
 			isa = PBXGroup;
 			children = (
+				565521D72455E6EE00D9389B /* LICENSE */,
+				565521D32455E6C700D9389B /* include */,
+				565521D42455E6CF00D9389B /* src */,
 				565521C62455E63400D9389B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -34,6 +40,22 @@
 				565521C52455E63400D9389B /* libhttp.dylib */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		565521D32455E6C700D9389B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				565521D52455E6E400D9389B /* common.h */,
+				565521D82455E75F00D9389B /* types.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		565521D42455E6CF00D9389B /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +94,7 @@
 		565521BD2455E63400D9389B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = http;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Recep Aslantas";
 				TargetAttributes = {
