@@ -6,11 +6,17 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		565521DE2455E84B00D9389B /* req.c in Sources */ = {isa = PBXBuildFile; fileRef = 565521DC2455E84B00D9389B /* req.c */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		565521C52455E63400D9389B /* libhttp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libhttp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		565521D52455E6E400D9389B /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		565521D72455E6EE00D9389B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		565521D82455E75F00D9389B /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		565521DC2455E84B00D9389B /* req.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = req.c; sourceTree = "<group>"; };
+		565521DF2455E87E00D9389B /* req.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = req.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			children = (
 				565521D52455E6E400D9389B /* common.h */,
 				565521D82455E75F00D9389B /* types.h */,
+				565521DF2455E87E00D9389B /* req.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -54,6 +61,7 @@
 		565521D42455E6CF00D9389B /* src */ = {
 			isa = PBXGroup;
 			children = (
+				565521DC2455E84B00D9389B /* req.c */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565521DE2455E84B00D9389B /* req.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
