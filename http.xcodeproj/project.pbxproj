@@ -51,9 +51,7 @@
 		565521D32455E6C700D9389B /* include */ = {
 			isa = PBXGroup;
 			children = (
-				565521D52455E6E400D9389B /* common.h */,
-				565521D82455E75F00D9389B /* types.h */,
-				565521DF2455E87E00D9389B /* req.h */,
+				565521E12455E97600D9389B /* http */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -64,6 +62,16 @@
 				565521DC2455E84B00D9389B /* req.c */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		565521E12455E97600D9389B /* http */ = {
+			isa = PBXGroup;
+			children = (
+				565521D52455E6E400D9389B /* common.h */,
+				565521D82455E75F00D9389B /* types.h */,
+				565521DF2455E87E00D9389B /* req.h */,
+			);
+			path = http;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
