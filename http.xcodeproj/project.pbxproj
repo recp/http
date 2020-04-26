@@ -17,6 +17,7 @@
 		565521D82455E75F00D9389B /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 		565521DC2455E84B00D9389B /* req.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = req.c; sourceTree = "<group>"; };
 		565521DF2455E87E00D9389B /* req.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = req.h; sourceTree = "<group>"; };
+		565521E22455EAB000D9389B /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 		565521D42455E6CF00D9389B /* src */ = {
 			isa = PBXGroup;
 			children = (
+				565521E22455EAB000D9389B /* common.h */,
 				565521DC2455E84B00D9389B /* req.c */,
 			);
 			path = src;

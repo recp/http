@@ -5,7 +5,8 @@
 * Full license can be found in the LICENSE file
 */
 
-#include "../include/req.h"
+#include "common.h"
+#include "../include/http/req.h"
 
 http_req*
 http_req_parse(const char * __restrict buff) {
