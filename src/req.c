@@ -7,9 +7,21 @@
 
 #include "common.h"
 #include "../include/http/req.h"
+#include "strpool.h"
 
 http_req*
-http_req_parse(const char * __restrict buff) {
-  /* TODO */
-  return NULL;
+http_req_parse(const char * __restrict buff, size_t len) {
+  http_req   *req;
+  const char *p;
+  
+  req = malloc(sizeof(*req));
+  p   = buff;
+
+  /* Parse Method */
+  if (http_memstr(p, GET)) {
+    p += _s_http_GET_LEN;
+    req->method = HTTP_METHOD_GET;
+  }
+  
+  return req;
 }

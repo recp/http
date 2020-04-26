@@ -11,6 +11,14 @@
 #include "../include/http/common.h"
 #include "../include/http/types.h"
 
+#include <stdlib.h>
+#include <string.h>
+
+/* compiler should or iwll optimize this and eliminate memcmp call for known
+ * small strings
+ */
+#define http_memstr(A, B) (memcmp(A, _s_http_##B, _s_http_##B##_LEN) == 0)
+
 HTTP_INLINE
 const char*
 skipspaces(const char * __restrict buff) {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		565521DE2455E84B00D9389B /* req.c in Sources */ = {isa = PBXBuildFile; fileRef = 565521DC2455E84B00D9389B /* req.c */; };
+		565521E724560DA000D9389B /* strpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 565521E424560D9F00D9389B /* strpool.h */; };
+		565521E824560DA000D9389B /* strpool.c in Sources */ = {isa = PBXBuildFile; fileRef = 565521E524560D9F00D9389B /* strpool.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,10 @@
 		565521DC2455E84B00D9389B /* req.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = req.c; sourceTree = "<group>"; };
 		565521DF2455E87E00D9389B /* req.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = req.h; sourceTree = "<group>"; };
 		565521E22455EAB000D9389B /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		565521E324560D9F00D9389B /* strpool.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = strpool.json; sourceTree = "<group>"; };
+		565521E424560D9F00D9389B /* strpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strpool.h; sourceTree = "<group>"; };
+		565521E524560D9F00D9389B /* strpool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strpool.c; sourceTree = "<group>"; };
+		565521E624560D9F00D9389B /* strpool.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = strpool.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 			children = (
 				565521E22455EAB000D9389B /* common.h */,
 				565521DC2455E84B00D9389B /* req.c */,
+				565521E424560D9F00D9389B /* strpool.h */,
+				565521E524560D9F00D9389B /* strpool.c */,
+				565521E324560D9F00D9389B /* strpool.json */,
+				565521E624560D9F00D9389B /* strpool.py */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -83,6 +93,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565521E724560DA000D9389B /* strpool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 565521C92455E63400D9389B /* Build configuration list for PBXNativeTarget "http" */;
 			buildPhases = (
+				565521E924560DE300D9389B /* ShellScript */,
 				565521C12455E63400D9389B /* Headers */,
 				565521C22455E63400D9389B /* Sources */,
 				565521C32455E63400D9389B /* Frameworks */,
@@ -139,12 +151,33 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		565521E924560DE300D9389B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python \"${SRCROOT}/src/strpool.py\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		565521C22455E63400D9389B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				565521DE2455E84B00D9389B /* req.c in Sources */,
+				565521E824560DA000D9389B /* strpool.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

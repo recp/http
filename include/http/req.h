@@ -21,6 +21,6 @@ typedef struct http_req {
 } http_req;
 
 http_req*
-http_req_parse(const char * __restrict buff);
+http_req_parse(const char * __restrict buff, size_t len);
 
 #endif /* http_req_h */
