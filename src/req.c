@@ -24,7 +24,13 @@ http_req_parse(const char * __restrict buff, size_t len) {
   } else if (http_memstr(p, POST)) {
     p += _s_http_POST_LEN;
     req->method = HTTP_METHOD_POST;
+  } else {
+    goto err;
   }
 
   return req;
+  
+err:
+  free(req);
+  return NULL;
 }

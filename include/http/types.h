@@ -9,6 +9,7 @@
 #define http_types_h
 
 typedef enum __attribute__((__packed__)) http_method_t {
+  HTTP_METHOD_UNKNOWN = 0,
   HTTP_METHOD_OPTIONS = 1,
   HTTP_METHOD_GET     = 2,
   HTTP_METHOD_HEAD    = 3,
