@@ -13,11 +13,12 @@
 
 typedef struct http_req {
   const char   *data;
-  const char   *url;
+  const char   *uri;
   size_t        dataLen;
-  uint32_t      urlLen;
+  uint32_t      uriLen;
   int           fd;
   http_method_t method:8;
+  bool          isSSL:1;
 } http_req;
 
 http_req*
